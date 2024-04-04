@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"time2_exit\startup_stm32f411xe.o"
+"time2_exit\main.o"
+"time2_exit\stm32f4xx_it.o"
+"time2_exit\stm32f4xx_hal_msp.o"
+"time2_exit\stm32f4xx_hal_tim.o"
+"time2_exit\stm32f4xx_hal_tim_ex.o"
+"time2_exit\stm32f4xx_hal_rcc.o"
+"time2_exit\stm32f4xx_hal_rcc_ex.o"
+"time2_exit\stm32f4xx_hal_flash.o"
+"time2_exit\stm32f4xx_hal_flash_ex.o"
+"time2_exit\stm32f4xx_hal_flash_ramfunc.o"
+"time2_exit\stm32f4xx_hal_gpio.o"
+"time2_exit\stm32f4xx_hal_dma_ex.o"
+"time2_exit\stm32f4xx_hal_dma.o"
+"time2_exit\stm32f4xx_hal_pwr.o"
+"time2_exit\stm32f4xx_hal_pwr_ex.o"
+"time2_exit\stm32f4xx_hal_cortex.o"
+"time2_exit\stm32f4xx_hal.o"
+"time2_exit\stm32f4xx_hal_exti.o"
+"time2_exit\system_stm32f4xx.o"
+--strict --scatter "TIME2_EXIT\TIME2_EXIT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIME2_EXIT.map" -o TIME2_EXIT\TIME2_EXIT.axf
